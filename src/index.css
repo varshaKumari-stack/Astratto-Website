@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "../src/Components/Pages/fonts.css";
+ 
+body {
+  background: #000;
+}
+.homeH1 {
+  animation: homeH1 2.5s ease-in-out infinite;
+  font-family: areg;
+}
+
+@keyframes homeH1 {
+  0% {
+    opacity: 0.3;
+    color: #fff;
+  }
+
+  50% {
+    opacity: 0.7;
+    color: rgb(145, 43, 170);
+  }
+
+  100% {
+    opacity: 1;
+    color: rgb(157, 9, 195);
+  }
+}
+
+.magito {
+  background: linear-gradient(
+    to top right,
+    rgb(225, 5, 225),
+    rgb(235, 235, 137)
+  );
+  border-radius: 2rem;
+  color: rgb(99, 42, 242);
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  transform: rotate(8deg);
+  margin-top: 1rem;
+  font-family: rock;
+}
+.magito:hover {
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 0, 0.474),
+    rgba(46, 46, 224, 0.666)
+  );
+  transition: all 0.3s linear;
+  color: #888;
+}
+.group:hover {
+  border-bottom-left-radius: 14rem;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transform: skew(3deg);
+}
+.guide {
+  display: inline-block; /* important for transform */
+  animation: guide 2.5s ease-in-out infinite;
+  font-family: areg;
+}
+
+@keyframes guide {
+  0% {
+    opacity: 0.3;
+    color: #fff;
+    transform: skewX(-40deg);
+  }
+  50% {
+    opacity: 0.7;
+    color: rgb(96, 19, 126);
+    transform: skewX(40deg);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(185, 10, 229);
+    transform: skewX(-40deg);
+  }
+}
+
+.firstImg:hover i {
+  transform: rotate(180deg);
+  background: rgb(35, 102, 102);
+  border: none;
+}
+
+.first-one,
+.sec-one,
+.thi-one,
+.four-one {
+  transition: filter 0.3s ease-in-out; /* smooth animation */
+}
+
+.first-one:hover,
+.sec-one:hover,
+.thi-one:hover,
+.four-one:hover {
+  filter: drop-shadow(0 0 16px rgb(155, 76, 224));
+  scale: 1.1;
+}
+
+.footer {
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 102, 0.703),
+    #c73434
+  );
+  display: inline-block;
+  transform-style: preserve-3d;
+  animation: floatTilt 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: perspective(800px) rotateX(6deg) rotateY(6deg) translateY(0px);
+  }
+
+  50% {
+    transform: perspective(800px) rotateX(-6deg) rotateY(-6deg)
+      translateY(-10px);
+  }
+
+  100% {
+    transform: perspective(800px) rotateX(6deg) rotateY(6deg) translateY(0px);
+  }
+}
+.contact:hover i {
+  background: none;
+  color: #fff;
+}
