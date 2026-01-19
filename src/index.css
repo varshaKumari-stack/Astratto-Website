@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @import "../src/Components/Pages/fonts.css";
- 
+
 body {
   background: #000;
+  overflow-x: hidden;
 }
 .homeH1 {
   animation: homeH1 2.5s ease-in-out infinite;
